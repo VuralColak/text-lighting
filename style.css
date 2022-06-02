@@ -10,122 +10,86 @@ html, body {
 
 body {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background-color: #262626;
 }
 
-main {
+.text {
     display: flex;
-    position: relative;
     align-items: center;
     justify-content: center;
-    width: 680px;
-    height: 340px;
-    cursor: pointer;
+    letter-spacing: 25px;
     
 }
 
-h1 {
-    font-size: 50px;
-    transition-duration: 2s;
-    text-align: center;
+.text div {
+    font-size: 80px;
+    font-family: 'Lato', sans-serif;
+    color: #484848;
 }
 
-p {
-    text-align: center;
-    transition-duration: 2s;
+.text .l {
+    animation-name: animasyon;
+    /* animation-duration: 0.2s; */
 }
 
-.box {
-    width: 170px;
-    aspect-ratio: 1/1;
-    position: absolute;
-    transition-duration: 1s;
-
+.text .i {
+    animation-name: animasyon;
+    /* animation-duration: 0.2s; */
+    animation-delay: 0.15s;
 }
 
-.box1 {
-    background-color: steelblue;
-    top: 0;
-    left: 170px;
+.text .g {
+    animation-name: animasyon;
+    /* animation-duration: 0.2s; */
+    animation-delay: 0.3s;
 }
 
-.box2 {
-    background-color: dimgray;
-    top: 0;
-    right: 170px;
+.text .h {
+    animation-name: animasyon;
+    /* animation-duration: 0.2s; */
+    animation-delay: 0.45s;
 }
 
-.box3 {
-    background-color: rosybrown;
-    bottom: 0;
-    right: 170px;
+.text .t {
+    animation-name: animasyon;
+    /* animation-duration: 0.2s; */
+    animation-delay: 0.6s;
 }
 
-.box4 {
-    background-color: yellow;
-    bottom: 0;
-    left: 170px;
+.text .i2 {
+    animation-name: animasyon;
+    /* animation-duration: 0.2s; */
+    animation-delay: 0.75s;
 }
 
-main:hover .box1 {
-    transform: translateX(-90%) rotate(90deg);
+.text .n {
+    animation-name: animasyon;
+    /* animation-duration: 0.2s; */
+    animation-delay: 0.9s;
 }
 
-main:hover .box2 {
-    transform: translateX(90%) rotate(90deg);
+.text .g2 {
+    animation-name: animasyon;
+    /* animation-duration: 0.2s; */
+    animation-delay: 1.05s;
 }
 
-main:hover .box3 {
-    transform: translateX(90%) rotate(90deg);
+.text div {
+    animation: animasyon 1.2s infinite;
 }
 
-main:hover .box4 {
-    transform: translateX(-90%) rotate(90deg);
-}
 
-main:hover p {
-    transform: scale(1.2) rotate(360deg);
-}
 
-@media (max-width: 680px) {
-    
-    main {
-        width: 320px;
-    height: 160px;
-    }
-    
-    .box {
-        width: 80px;
+@keyframes animasyon {
+    0% {
+        color: #fff900;
+        text-shadow: 1px 1px 25px #ff6c00;
     }
 
-    .box1 {
-        left: 80px;
-    }
-    
-    .box2 {
-        background-color: dimgray;
-        top: 0;
-        right: 80px;
-    }
-    
-    .box3 {
-        background-color: rosybrown;
-        bottom: 0;
-        right: 80px;
-    }
-    
-    .box4 {
-        background-color: yellow;
-        bottom: 0;
-        left: 80px;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-    
-    p {
-        font-size: 7px;
+    50% {
+        color: #484848;
+        text-shadow: none;
     }
 }
