@@ -19,7 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    letter-spacing: 25px;
+    letter-spacing: 20px;
     
 }
 
@@ -32,64 +32,72 @@ body {
 .text .l {
     animation-name: animasyon;
     /* animation-duration: 0.2s; */
+    animation-delay: 0.0s;
 }
 
 .text .i {
     animation-name: animasyon;
     /* animation-duration: 0.2s; */
-    animation-delay: 0.15s;
+    animation-delay: 0.1s;
 }
 
 .text .g {
     animation-name: animasyon;
     /* animation-duration: 0.2s; */
-    animation-delay: 0.3s;
+    animation-delay: 0.2s;
 }
 
 .text .h {
     animation-name: animasyon;
     /* animation-duration: 0.2s; */
-    animation-delay: 0.45s;
+    animation-delay: 0.3s;
 }
 
 .text .t {
     animation-name: animasyon;
     /* animation-duration: 0.2s; */
-    animation-delay: 0.6s;
+    animation-delay: 0.4s;
 }
 
 .text .i2 {
     animation-name: animasyon;
     /* animation-duration: 0.2s; */
-    animation-delay: 0.75s;
+    animation-delay: 0.5s;
 }
 
 .text .n {
     animation-name: animasyon;
     /* animation-duration: 0.2s; */
-    animation-delay: 0.9s;
+    animation-delay: 0.6s;
 }
 
 .text .g2 {
     animation-name: animasyon;
     /* animation-duration: 0.2s; */
-    animation-delay: 1.05s;
+    animation-delay: 0.7s;
 }
 
 .text div {
-    animation: animasyon 1.2s infinite;
+    animation: animasyon 0.8s linear infinite;
 }
 
 
 
 @keyframes animasyon {
     0% {
-        color: #fff900;
-        text-shadow: 1px 1px 25px #ff6c00;
-    }
-
-    50% {
         color: #484848;
         text-shadow: none;
     }
+
+    80% {
+        color: #484848;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #fff900;
+        text-shadow: 0px 0px 20px #ff6c00;
+    }
+
+    
 }
